@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Intro to Information Visualization</title>
+	<meta name="description" content="An introduction to datavisualization designed for Global Innovatin Challenge Week participants 3/31">
+	<meta name="author" content="Aurelia Moser">
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+
+	<!-- FOR CSS + STYLE REFS -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+	<!-- FOR SYNTAX HIGHLIGHTING -->
+	<link rel="stylesheet" href="lib/css/solarized_light.css">
+
+	<!-- FOR PRINTING (PDF) -->
+	<script>
+	// If the query includes 'print-pdf' we'll use the PDF print sheet
+		if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+	</script>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="#2c3e50">
+				<h1 class="upper">Information</h1>
+				<h1 class="upper">Visualization</h1>
+			  <br>
+			  <h3>MAVC - GIC Presentation</h3>
+			  <p>
+			  	<small>by <a href="http://algoryth.ms">Aurelia Moser</a> / <a href="http://twitter.com/auremoser">@auremoser</a> / <a href="http://github.com/auremoser/">github</a></small>
+			  <br>
+			  <h6><a href="http://github.com/auremoser/mavc">http://github.com/auremoser/mavc</a></h6>
+			</section>
+	<!-- INTRODUCE TOPIC -->
+			<section>
+				<section data-background="#16a085">
+			  	<h2>"Information Visualization"</h2>
+			  	<br>
+			  	<blockquote>
+			  	  A way of representing information and data via a visual agenda.
+			  	</blockquote>
+			  	<br>
+			  	<blockquote>
+			  	  The study of visual representations of abstract data to reinforce human cognition.
+			  	</blockquote>
+			  	<br>
+			  	<blockquote>
+			  	  A method for communitcating quantitative information with qualitative nuance.
+			  	</blockquote>
+				</section>
+				<aside class="notes">
+				</aside>
+			</section>
+			<section>
+				<section class="fragments" data-background="#2ecc71">
+					<h2>Goal of Visualizations</h2>
+						<p class="fragment">Represent information</p>
+			  	  <p class="fragment">in the <em><strong>simplest</strong></em> way</p>
+			  	  <p class="fragment">with <em><strong>minimum</strong></em> visual complexity</p>
+			  		<p class="fragment">depending on your particular <em><strong>constraints</strong></em>.</p>	
+			  		<img class="fragment" src="https://raw.github.com/auremoser/mavc/master/asset/flat-calendar.png">
+			  		<img class="fragment" height="221" src="https://raw.github.com/auremoser/mavc/master/asset/flat-weather.png">
+			  		<img class="fragment" height="221" src="https://raw.github.com/auremoser/mavc/master/asset/flat-icon.png">
+				</section>
+				<aside class="notes">
+					ie beware chart junk
+				</aside>
+			</section>
+	<!-- DEFINE APPROACHES + LIMITATIONS -->
+			<section data-background="#2980b9">
+			  <h2>Approach to Visualizations</h2>
+			  <br>
+			  <ul>
+			    <li>Understand your audience
+			    <li>Understand your data and desired narrative
+			    <li>Define a visual style and register
+			    <li>Build + Test
+			  </ul>
+			  <img src="https://raw.github.com/auremoser/mavc/master/asset/d3-hex.png">
+			  <aside class="notes">
+				</aside>
+			</section>
+			<section data-background="#27ae60">
+				<h2>Constraints</h2>
+				<p><em>Audience</em> + Data + Resources</p>
+				<img height="450" src="https://raw.github.com/auremoser/mavc/master/asset/housholds.png">
+				<small><a href="http://www.richblockspoorblocks.com/">Rich Blocks, Poor Blocks</a>, American Community Survey</small>
+				<aside class="notes">
+				</aside>
+			</section>
+
+			<section data-background="#27ae60">
+				<h2>Constraints</h2>
+				<p>Audience + <em>Data</em> + Resources</p>
+				<img height="400" src="https://raw.github.com/auremoser/mavc/master/asset/fluTrends.png"><br>
+				<small><a href="http://www.google.org/flutrends/">Google Flu Trends</a>, Google.org</small>
+			</section>
+
+			<section data-background="#27ae60">
+				<h2>Constraints</h2>
+				<p>Audience + Data + <em>Resources</em></p>
+				<img height="400" src="https://raw.github.com/auremoser/mavc/master/asset/periscopic.png">
+				<small><a href="guns.periscopic.com">U.S. Gun Killings</a>, 2010, Periscopic</small>
+			</section>
+	
+
+
+	<!-- DEFINE TYPES OF VIZ -->
+			<section>
+				<section data-background="#16a085">
+					<!-- <a href="#" class="navigate-down">down</a> -->
+					<h2>Types of Visualizations</h2>
+					<br>
+						<ul>
+							<li>Temporal + Time-Series 
+							<li>Multivariate + Statistical
+							<li>Mapping, GIS + Geospatial
+							<li>Relational + Network
+						</ul>
+						<br>
+						<br>
+						<img height="200" src="https://raw.github.com/auremoser/mavc/master/asset/time-series.png">
+						<img width="215" height="200" src="https://raw.github.com/auremoser/mavc/master/asset/time.png">
+						<img height="200" src="https://raw.github.com/auremoser/mavc/master/asset/map.png">
+						<img height="200" src="https://raw.github.com/auremoser/mavc/master/asset/graph.png">
+
+
+					<aside class="notes">
+						* in this case mostly quantitative, qual is another story
+						* choice is driven by type of data and objective of emphasis
+						* if data supports, multiple visualization types can be effective
+					</aside>
+				</section>
+	<!-- PROVIDE EXAMPLES OF TYPES -->
+				<section data-transition="linear" data-background="#1abc9c" data-background-transition="slide">
+					<h2> Ex: Time-Series </h2>
+					<br>
+					<a href="http://auremoser.github.com/graphitiTime">Graphiti Time Demo</a> /
+					<a href="https://github.com/auremoser/graphitiTime">Github Repo</a>
+					<img src="https://raw.github.com/auremoser/mavc/master/asset/graphSmallMultiples.png" class="image navigate-down">
+					<img src="https://raw.github.com/auremoser/images/master/Queens.png" alt="Down arrow">
+					<img src="https://raw.github.com/auremoser/images/master/Manhattan.png">
+					<img src="https://raw.github.com/auremoser/images/master/Bklyn.png">
+	
+					<aside class="notes">
+					</aside>
+				</section>
+	
+				<section data-transition="linear" data-background="#1abc9c" data-background-transition="	slide">
+					<h2> Ex: Mapping </h2>
+					<br>
+					<a href="http://auremoser.github.com/graphitiMap">Graphiti Map Demo</a> / 
+					<a href="https://github.com/auremoser/graphitiTime">Github Repo</a>
+					<img src="https://raw.github.com/auremoser/mavc/master/asset/graphMap.png">
+					<aside class="notes">
+					</aside>
+				</section>
+	
+				<section data-transition="linear" data-background="#1abc9c" data-background-transition="	slide">
+					<h2> Ex: Relational + Network </h2>
+					<br>
+					<a href="http://auremoser.github.com/graphitiNet">Graphiti Net Demo</a> / 
+					<a href="https://github.com/auremoser/graphitiNet">Github Repo</a>
+					<img src="https://raw.github.com/auremoser/mavc/master/asset/graphNetGexf.png	">
+					<aside class="notes">
+					</aside>
+				</section>
+			</section>
+
+			<section data-background="#2980b9">
+			  <h2>Summary</h2>	
+			  <ul>	
+			  	<li class="fragment">Consider your approach
+			  	<li class="fragment">Define your constraints
+			  	<li class="fragment">Select visualization type
+			   	<li class="fragment">Build + test
+			  </ul>
+			  <br>
+			  <img class="fragment" src="https://raw.github.com/auremoser/mavc/master/asset/xkcd.png">
+			  <aside class="notes">
+			  	Who is your audience?
+			  	What is your data + objective
+			  	What types of visualization would you like to create?
+			  	What are the logical steps to creating them?
+				</aside>
+			</section>
+	<!-- WRAP UP PRESENTATION -->
+			<section data-background="#8e44ad">
+			  <h2>Resources</h2>
+			  <br>
+			  <ul>
+			    <li><a href="http://urli.st/Pd9">Data Visualization URList</a>
+			    <li>Stephen Few (2009), <a href="http://www.amazon.com/Now-You-See-Visualization-	Quantitative/dp/0970601980">Now You See It: Simple 	Visualization Techniques for Quantitative Analysis.</a> Analytics Press.
+			    <li>Jeffrey Heer,	Michael Bostock and Vadim Ogievetsky (2010), <a href="http://queue.acm.org/detail.cfm?id=1805128">“A Tour through the 	Visualization Zoo: A survey of powerful visualization techniques, from 	the obvious to the obscure”</a> ACM Queue 8(5).
+			    <li>Jeffrey 	Manuel Lima (2009), <a href="http://www.visualcomplexity.com/vc/blog/?p=644">“Information Visualization Manifesto.”</a> VCBlog.
+			  </ul>
+			  <aside class="notes">
+				</aside>
+			</section>
+
+			<section data-background="#2c3e50">
+				<h2>Thanks!</h2s>
+					<h4>Aurelia Moser / aurelia@ushahidi.com</h4>
+					<h4><a href="http://github.com/auremoser/mavc">http://github.com/auremoser/mavc</a></h4>
+			</section>
+		</div>
+
+		<!-- NAVIGATIONAL CONTROLS UI -->
+		<aside class="controls">
+			<a class="left" href="#">&#x25C4;</a>
+			<a class="right" href="#">&#x25BA;</a>
+			<a class="up" href="#">&#x25B2;</a>
+			<a class="down" href="#">&#x25BC;</a>
+		</aside>
+		
+		<!-- PRESENTATION PROGRESS BAR -->
+		<div class="progress"><span></span></div>
+	</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+	  <!-- REVEAL JS CONFIGS -->
+		<script>	
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+
+			// Optional libraries used to extend reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});	
+		</script>
+</body>
+<!-- Much dept to Hakim El Hattab and Reveal.js for presentation styling -->
+</html>
