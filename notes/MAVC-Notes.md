@@ -52,15 +52,21 @@ graphics should not be as complicated and the standardized information for each 
 #####BAHWALPUR SERVICE DELIVERY UNIT
 - crowdsourced data collection on service delivery sector (district govt)
 - Pakistan/global
+
+----
+new visuals: inclusion, reserve based management
+
+service delivery unit, what is it?
+microplans generated how?''
+
+dashboard isn't developed by anybody?
+
 - 
 #####CITIZENEYE
 - extractive industry monitoring platform (oil/gas)
 - Ghana
 
 ####Ghana Petrol Watch
-
-
-
 ----
 good presence
 solid simple presentation, slow
@@ -76,5 +82,10 @@ how do you personalize it? why does the public care? oil money how does it affec
 
 ----------
 video didn't work and too much text, need way to visualize their work
+
+
+========
+superdesk - citizen desk for elections
+open source deployment for elections
 
 
